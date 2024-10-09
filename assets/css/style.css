@@ -943,7 +943,7 @@ main {
 }
 
 .select-item button {
-  background: var(--heavy-red);
+  background: var(--light-white);
   color: var(--heavy-red);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -953,7 +953,7 @@ main {
   border-radius: 8px;
 }
 
-.select-item button:hover { --light-white: hsl(240, 2%, 20%); }
+.select-item button:hover { background: var(--solid-orange) }
 
 .project-list {
   display: grid;
@@ -1794,19 +1794,19 @@ textarea.form-input::-webkit-resizer { display: none; }
    * RESET
    */
 
-  body::-webkit-scrollbar { width: 20px; }
+  body::-webkit-scrollbar { width: 10px; }
 
   body::-webkit-scrollbar-track { background: var(--solid_black); }
 
   body::-webkit-scrollbar-thumb {
-    border: 5px solid var(--light-brown);
-    background: hsla(0, 0%, 100%, 0.1);
-    border-radius: 20px;
+    /* border: 5px solid var(--light-brown); */
+    background: var(--heavy-red);
+    border-radius: 10px;
     box-shadow: inset 1px 1px 0 hsla(0, 96%, 12%, 0.11),
                 inset -1px -1px 0 hsla(0, 96%, 12%, 0.11);
   }
 
-  body::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.15); }
+  body::-webkit-scrollbar-thumb:hover { background: var(--heavy-pink); }
 
   body::-webkit-scrollbar-button { height: 60px; }
 
